@@ -1,0 +1,7 @@
+<% cntr = 1 -%>
+<%# @server_names.split(',').each do |cluster_node| -%>
+<% @server_name.each do |cluster_node| -%>
+<%# "#{cntr}" -%> <%# cluster_node %>
+<% cntr =cntr + 1 -%>
+<% end-%>
+/sbin/gabconfig -c -n<%= "#{cntr}" %>

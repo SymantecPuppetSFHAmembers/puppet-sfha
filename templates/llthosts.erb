@@ -1,0 +1,6 @@
+<% cntr = 0 -%>
+<%# @server_name.split(',').each do |cluster_node| -%>
+<% @server_name.each do |cluster_node| -%>
+<%= "#{cntr}" -%> <%= cluster_node %>
+<% cntr =cntr + 1 -%>
+<% end-%>
