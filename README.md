@@ -5,9 +5,9 @@ Supports installation of SFHA stack using YUM on RHEL7
 
 ## Usage:
 
-Requirements:
-SFHA yum repository configured on individual nodes (Use product DVD for YUM repo configuration)
+Basic requirement is SFHA yum repository configured on individual nodes (Use product DVD for YUM repo configuration)
 
+``` puppet
 node 'rhel7-n1' {
 	class { 'sfha':
 		### Need to specify cluster node order
@@ -22,9 +22,9 @@ node 'rhel7-n1' {
 		### absent - removes all SFHA packages
 		### installed - installs all SFHA packages
 		operation =>"installed",
-,
 	}
 }
+```
 
 ## License
 -------
@@ -37,14 +37,14 @@ Mandar Pise < mandar_pise@symantec.com >
 ## Support
 -------
 1. SFHA release support
-- SFHA 6.2
+	- SFHA 6.2
  
 2. Operating Systems supported
-- RHEL7
+	- RHEL7
 
 3. Product YUM repositories supported (Use product DVD for YUM repo configuration on individual nodes)
-- VCS62 
-- SFHA62
+	- VCS62 
+	- SFHA62
 
 4. Deploys sample /etc/llttab and /etc/gabtab files on cluster nodes if clus_configure set to 1
 
