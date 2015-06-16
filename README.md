@@ -48,4 +48,5 @@ Mandar Pise < mandar_pise@symantec.com >
 
 4. Deploys sample /etc/llttab and /etc/gabtab files on cluster nodes if clus_configure set to 1
 
-Please log tickets and issues at our [Projects site](https://github.com/SymantecPuppetSFHAmembers/puppet-sfha)
+If there are issues found in the solution, feel free to log them at [Projects site](https://github.com/SymantecPuppetSFHAmembers/puppet-sfha) and the author will assess and provide fixes
+at his/her own discretion.
